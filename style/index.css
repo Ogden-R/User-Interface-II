@@ -44,11 +44,13 @@ blockquote, q {
     margin:0;
     max-width:100%;
     border:1px solid grey;
+    
     }
 
 /*General Styles (great to use until you have a preference)*/
 html{
     font-size: 62.5%;
+    background-color:rgb(57, 197, 212);
 }
 
 body{
@@ -59,4 +61,64 @@ body{
 
 section{
     padding:4% 0; /*this just spaces the page out a little bit nicer.*/
+    background-color:mediumpurple;
+}
+
+
+.title{
+    width:20%;
+    display:flex;
+    font-size:4rem;
+    justify-content:center;
+    margin:2%;
+    color:mediumpurple;
+}
+
+
+.goSomewhere{
+    width:45%;
+    display:flex;
+    justify-content: center;
+    font-size:2rem;
+    border:2px solid rebeccapurple;
+    text-decoration:none;
+    margin-bottom:1.5%;
+}
+.goSomewhere a{
+    background-color:rgb(247, 189, 232);
+    text-decoration:none;
+    padding:.5% 5%;
+    color:rebeccapurple;
+    border:2px solid rgb(92, 53, 198);
+
+}
+#home, #contact{
+    background-color:rebeccapurple;
+    color:white;
+}
+.images{
+    width:50%;
+    position:relative;
+
+}
+.intro{
+    width:49%;
+    position:absolute;
+    display:flex;
+    justify-content:flex-end;
+
+}
+
+.pictures img{
+    width:20%;
+    margin:2%;
+    display:flex;
+    justify-content:center;
+}
+
+footer{
+    text-align:center;
+    padding:5%;
+    text-decoration:none;
+    color:rebeccapurple;
 }
