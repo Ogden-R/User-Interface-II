@@ -70,26 +70,40 @@ section{
     font-size:4rem;
     justify-content:left;
     margin:2%;
-    color:mediumpurple;
+    color:rebeccapurple;
 }
 .navBar{
     width:45%;
     display:flex;
     justify-content: center;
     font-size:2rem;
-    /* border:2px solid rebeccapurple; */
+    flex-direction:row;
     text-decoration:none;
     margin-bottom:1.5%;
 }
  .navBar a{
+    
     background-color:rgb(247, 189, 232);
     text-decoration:none;
     padding:.5% 5%;
     color:rebeccapurple;
     border:2px solid rgb(92, 53, 198);
 }
+.navBar a:hover{
+    background-color:mediumpurple;
+    color:pink;
+    transition:1s;
+}
+#home{
+    background-color:rebeccapurple;
+    color:white;
+}
+#home:hover{
+    background-color:hotpink;
+    color:rebeccapurple;
+}
 
-/* top section of body styles */
+/* about section styles */
 #wrapper{
     width:100%;
 }
@@ -106,7 +120,7 @@ section{
     margin:1%;
 }
 
-h2{
+h2{ 
     font-size:3rem;
     padding:2%;
 }
@@ -119,6 +133,11 @@ h2{
     background-color:turquoise;
     padding:2%;
     margin:auto 2%;
+}
+.about a:hover{
+    background-color:rgb(252, 169, 182);
+    color:mediumpurple;
+    transition:1s;
 }
 .about p{
     padding:4%;
@@ -133,17 +152,13 @@ h2{
     width:50%;
     padding:5% 4% 2%;
 }
-.about p{
-
-}
-
  /*pictures and body styles*/
  .photograph{
      width:100%;
      
  }
  .picContainer{
-     /* margin:0 2%; */
+    
      padding:2%;
      display:flex;
      flex-wrap:wrap;
@@ -179,9 +194,82 @@ h3{
     color:black;
     
 }
-footer a{
+#contact{
     padding:1%;
-    border:1px solid teal;
-    background-color:white;
+    border:2px solid rgb(92, 53, 198);
+    background-color:rgb(247, 189, 232);
     border-radius:3px;text-decoration:none;
 } 
+#contact:hover{
+    background-color:rebeccapurple;
+    color:pink;
+    transition:1s;
+}
+
+/* Media Queries */
+@media(max-width:800px){
+    /* tablet screen size */
+    .title, .navBar{
+        width:100%
+    }
+    .title{
+        margin:auto;
+    }
+    .pictures{
+        width:30%;
+        margin:auto;
+    }
+    #introPic, .about{
+        width:100%;
+        flex-direction:column;
+
+    } 
+    .about a{
+        word-wrap:no-wrap;
+        width:50%;
+        padding:3%;
+        margin-left:25%;
+
+    }
+
+}
+
+@media(max-width:500px){
+    /* phone screen size */
+    
+    .pictures{
+        width:48%;
+        margin:auto;
+    }
+   .title{
+        width:100%;
+        text-align:center;
+        padding:0;
+        margin-left:20%;
+    }
+    .navBar{
+        width:50%;
+        margin-left:25%;
+        flex-wrap:wrap;
+        flex-direction:column;
+        justify-content:center;
+    } #home, #about, #contact, #projects{
+        text-align:center;
+    }
+    #me{
+        width:100%;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .introPic{
+        width:100%;
+        height:40vh;
+    }
+    h2,.about a, .about p{
+        padding:auto;
+        text-align:center;
+        
+    } 
+   
+    
+}
