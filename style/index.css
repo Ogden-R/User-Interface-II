@@ -43,8 +43,7 @@ blockquote, q {
     padding:0;
     margin:0;
     max-width:100%;
-    
-    
+    border:2px solid black;
     }
 
 /*General Styles (great to use until you have a preference)*/
@@ -58,39 +57,21 @@ body{
     font-size:1.6rem;
     line-height:1.5;
     color:#4f4f4f;
-    border:2px solid black;
 }
 
 section{
-    padding:4% 0; /*this just spaces the page out a little bit nicer.*/
+    /*padding:4% 0; this just spaces the page out a little bit nicer.*/
     background-color:mediumpurple;
 }
-.wrapper{
-    display:flex;
-    justify-content:space-around;
-}
-.images{
-    justify-content:flex-start;
-}
-
-.rightside{
-    width:50%; 
-    align-content:space-between;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-   
-}
-
+/*Header Styles*/
 .title{
-    width:20%;
+    width:40%;
     display:flex;
     font-size:4rem;
-    justify-content:center;
+    justify-content:left;
     margin:2%;
     color:mediumpurple;
 }
-
 .goSomewhere{
     width:45%;
     display:flex;
@@ -100,31 +81,43 @@ section{
     text-decoration:none;
     margin-bottom:1.5%;
 }
-.goSomewhere a{
+ .goSomewhere a{
     background-color:rgb(247, 189, 232);
     text-decoration:none;
     padding:.5% 5%;
     color:rebeccapurple;
     border:2px solid rgb(92, 53, 198);
 }
+ /*pictures and body styles*/
+#wrapper{
+    width:100%;  
+}
+#me{
+    width:100%;
+    display:flex;
+}
+.intro1, .intro2{
+    width:50%;
+}
+.intro1{
+    background-image:url('https://picsum.photos/300/200');background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:50vh;
+}
 
 #home, #contact{
     background-color:rebeccapurple;
-    color:white;
+    color:white; 
 }
+/*individual picture divs styles*/
 
-.intro{
-    width:50%;
-    /* display:flex;
-    justify-content:flex-end; */
-
-}
-#projects{
+/* #projects{
     background-color:rgb(57, 197, 212);
     width:25%;
     display:flex;
     align-items:center;
-}
+} */
 p{
     color:rgb(137, 222, 231);
     display:flex;
@@ -133,14 +126,12 @@ p{
     text-align:center;
 }
 .pictures{
+    width:20%;
     display:flex;
-    align-items:stretch;
 
 }
 .pictures img{
-    width:24%;
-    margin:.4%;
-    height:7%;
+    margin:auto;
 }
 
  #me{
@@ -148,6 +139,8 @@ p{
      
  }
 
+
+/*Footer styles*/
 footer{
     text-align:center;
     padding:5%;
@@ -161,4 +154,4 @@ h3{
 }
 footer a{
     padding:2%;
-}
+} 
