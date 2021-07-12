@@ -89,7 +89,7 @@ blockquote, q {
         margin:2%; 
     }
     h1{
-        width:36%;
+        width:50%;
         padding:1% 0;
         font-size:4rem;
         letter-spacing: 1.5mm;
@@ -97,7 +97,7 @@ blockquote, q {
         text-shadow:1px 1px 2px black;
     }
     nav{
-        width:64%;
+        width:50%;
         display:flex;
         justify-content: flex-end;
         align-items: center;
@@ -130,7 +130,7 @@ blockquote, q {
         padding:15% 7%;
         text-align:center;
         margin: 0 auto;
-        
+
         background:url(https://images.unsplash.com/photo-1624924249260-e5c40c8b3aa0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80);
         background-size: cover;
         background-position:center top 35%;
@@ -139,7 +139,7 @@ blockquote, q {
         font-size:5rem;
         text-transform:uppercase;
         margin-bottom:1%;
-        width:50%;
+        width:70%;
         color:rgb(238, 188, 154);
         background-color:rgba(15, 13, 13, 0.411);
         text-transform:uppercase;
@@ -147,7 +147,7 @@ blockquote, q {
     }
     
     .container a{
-        width:20%;
+        width:35%;
         padding:2%;
         color:rgba(55, 55, 55, 0.9);
         border:solid 1px black;
@@ -163,7 +163,7 @@ blockquote, q {
         text-align:center;
         margin:0 auto;
         font-size: 5rem;
-        width:30%;
+        width:35%;
         color:lightsalmon;
         text-shadow:1px 1px 2px black;
     }
@@ -174,13 +174,13 @@ blockquote, q {
 
     
 /* images section styles */
-    #pics{
+    #pics, #logos{
         padding-top:2%;
         display:flex;
         flex-wrap:wrap;
         justify-content: space-around;
     }
-    #pics div{
+    #pics div, #logos div{
         width:30%;
         padding:1%;
         display:flex;
@@ -216,3 +216,83 @@ blockquote, q {
         color:white;
         transition:1s;
     }
+
+
+
+
+
+/*Media Queries*/
+
+
+/*Tablet (800px)*/
+@media(max-width:800px){
+    /*header & nav bar section styles*/
+    
+        body{
+            margin:2%;
+        }
+        header{
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, nav {
+            width:100%;
+            justify-content: center;
+            padding:0;
+        }   
+    /* top section styles */
+        h2{
+            width:80%;
+
+        }
+        .container{
+            width:100%;
+            padding:15% 2.5%;
+        }
+        h3{
+            width:80%;
+        }
+         /* images section styles */
+         #logos div{
+             width:45%;
+
+         }
+        
+}
+/*Phone (500px)*/
+@media(max-width:500px){
+    /*header & nav bar section styles*/
+        header{
+            flex-direction:column;
+        }
+        nav {
+            width:40%;
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align:center;
+        }  
+    /* top section styles */
+        h2{
+            width:90%;
+            margin:2%;
+        }
+
+        .container a{
+            width:50%;
+        }
+        
+    /* images section styles */
+        #pics div{
+            width:50%;
+            
+        }
+        #logos div{
+            width:75%;
+            display:flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            align-items: center;
+        } 
+}
